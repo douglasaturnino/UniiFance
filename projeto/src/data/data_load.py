@@ -40,7 +40,7 @@ class DataLoad:
                 raise ValueError(f'Erro: O nome do dataset fornecido é incorreto: {dataset}')
             
             loaded_data = pd.read_csv(f'../data/raw/{dataset}')
-            return loaded_data
+            return loaded_data[load_config_file().get('columns_to_use')]
         except ValueError as ve:
             logger.error(str(ve))
         except Exception as e:

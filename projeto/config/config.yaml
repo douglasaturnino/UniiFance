@@ -6,3 +6,7 @@ columns_to_use: ['target', 'TaxaDeUtilizacaoDeLinhasNaoGarantidas',
 
 train_dataset_name: 'train.csv'
 test_dataset_name: 'test.csv'
+
+target_name: "target"
+test_size: 0.33
+random_state: 42

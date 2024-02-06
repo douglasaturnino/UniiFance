@@ -8,8 +8,12 @@ import mlflow
 import pandas as pd
 import structlog
 from evaluation.classifier_eval import ModelEvaluation
+from feature_engine.discretisation import EqualFrequencyDiscretiser
+from feature_engine.imputation import MeanMedianImputer
+from feature_engine.wrappers import SklearnTransformerWrapper
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 from utils.utils import load_config_file
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")

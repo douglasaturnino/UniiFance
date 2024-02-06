@@ -192,4 +192,7 @@ pyrightconfig.json
 .history
 .ionide
 
+# mlflow
+mlartifacts/
+
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode

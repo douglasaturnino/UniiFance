@@ -9,3 +9,6 @@ deploy_aws:
 
 inference_aws:
 	cd src/deploy/aws; python3 inference.py
+
+inference_azure:
+	cd src/deploy/azure; python3 inference.py

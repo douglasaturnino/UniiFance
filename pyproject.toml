@@ -17,6 +17,8 @@ hyperopt = "^0.2.7"
 ruff = "^0.2.1"
 awscli = "^1.32.36"
 boto3 = "^1.34.36"
+azure-ai-ml = "^1.13.0"
+azure-identity = "^1.15.0"
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.

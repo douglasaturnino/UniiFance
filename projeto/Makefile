@@ -12,3 +12,6 @@ inference_aws:
 
 inference_azure:
 	cd src/deploy/azure; python3 inference.py
+
+monitoring:
+	cd src/monitoring; python3 monitor.py

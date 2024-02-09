@@ -3,7 +3,6 @@ import json
 import boto3
 import pandas as pd
 
-
 app_name = "prob-loan-sagemaker"
 region = "us-east-1"
 

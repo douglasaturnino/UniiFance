@@ -14,23 +14,56 @@ from evidently.test_preset import DataDriftTestPreset
 
 
 class ModelMonitoring:
+    """
+    Classe para monitoramento de modelo.
+
+    Esta classe carrega os dados de previsão e os dados de treinamento, calcula métricas de
+    monitoramento de modelo, e gera um relatório de monitoramento.
+
+    Attributes:
+        query (str): A consulta SQL para recuperar os dados de previsão.
+    """
+
     def __init__(self):
+        """
+        Inicializa uma instância da classe ModelMonitoring.
+        """
+
         self.query = "SELECT * FROM predictions"
 
-    def get_pred_data(self):
-        conn = sqlite3.connect(
-            "/mnt/0165652C522E8ECA/ProjetosDeProgramacao/mlflow/preds.db"
-        )
+    def get_pred_data(self) -> pd.DataFrame:
+        """
+        Obtém os dados de previsão do banco de dados.
+
+        Returns:
+            pd.DataFrame: O DataFrame contendo os dados de previsão.
+        """
+
+        conn = sqlite3.connect("preds.db")
         df_pred = pd.read_sql_query(self.query, conn)
         conn.close()
         return df_pred
 
-    def get_training_data(self):
+    def get_training_data(self) -> pd.DataFrame:
+        """
+        Obtém os dados de treinamento.
+
+        Returns:
+            pd.DataFrame: O DataFrame contendo os dados de treinamento.
+        """
+
         dl = DataLoad()
         df_train = dl.load_data("train_dataset_name")
         return df_train
 
-    def run(self):
+    def run(self) -> None:
+        """
+        Executa o monitoramento do modelo, calcula métricas e gera um relatório.
+
+        Returns:
+            None
+        """
+
         df_cur = self.get_pred_data()  # dados atuais
         df_ref = self.get_training_data().drop(
             "target", axis=1

@@ -3,6 +3,7 @@ from typing import Dict
 
 import joblib
 import yaml
+from typing import Any
 
 
 def load_config_file() -> Dict:
@@ -27,7 +28,7 @@ def load_config_file() -> Dict:
     return config_file
 
 
-def save_model(model) -> None:
+def save_model(model: Any) -> None:
     """
     Salva o modelo treinado no disco.
 

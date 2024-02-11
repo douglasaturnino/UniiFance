@@ -21,6 +21,10 @@ class DataPreprocess:
     Attributes:
         pipe (Pipeline): O pipeline de pré-processamento a ser aplicado aos dados.
         trained_pipe (Pipeline): O pipeline treinado após a execução do método train().
+
+    Methods:
+        train: Treina o pipeline.
+        transform: Aplica o pipeline treinado aos dados
     """
 
     def __init__(self, pipe: Pipeline):
@@ -52,10 +56,10 @@ class DataPreprocess:
             dataframe (pd.DataFrame): O DataFrame contendo os dados a serem transformados.
 
         Returns:
-            pd.DataFrame: O DataFrame resultante após a transformação.
+            dataframe (pd.DataFrame): O DataFrame resultante após a transformação.
         """
         if self.trained_pipe is None:
-            raise ValueError("Pipeline não foi trinado.")
+            raise ValueError("Pipeline não foi treinado.")
 
         logger.info("Transformação dos dados com preprocessador iniciou.")
         data_preprocessed = self.trained_pipe.transform(dataframe)

@@ -19,6 +19,11 @@ class DataValidation:
 
     Attributes:
         columns_to_use (list): Lista de colunas a serem utilizadas no DataFrame.
+
+    Methods:
+        check_shape_data: Verifica se as colunas do DataFrame correspondem à configuração definida.
+        check_columns: Verifica se as colunas do DataFrame atendem aos critérios definidos.
+        run: Executa as validações da estrutura e das colunas do DataFrame.
     """
 
     def __init__(self) -> None:

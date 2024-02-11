@@ -1,5 +1,6 @@
 import os
 import sys
+from typing import Tuple
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "../src"))
 
@@ -29,22 +30,27 @@ class DataTransformation:
 
         Args:
             dataframe (pd.DataFrame): O DataFrame contendo os dados a serem transformados.
+
+        Methods:
+            train_test_spliting: Divide o conjunto de dados em subconjuntos de treino e teste.
         """
         self.dataframe = dataframe
         self.target_name = load_config_file().get("target_name")
 
-    def train_test_spliting(self):
+    def train_test_spliting(
+        self,
+    ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
         """
         Divide o conjunto de dados em subconjuntos de treino e teste.
 
         Retorna os conjuntos de treino e teste para recursos (X) e alvos (y).
 
         Returns:
-            tuple: Uma tupla contendo quatro elementos: X_train, X_valid, y_train, y_valid.
-                X_train (pd.DataFrame): O conjunto de recursos de treino.
-                X_valid (pd.DataFrame): O conjunto de recursos de teste.
-                y_train (pd.Series): O conjunto de alvos de treino.
-                y_valid (pd.Series): O conjunto de alvos de teste.
+            tuple: Uma tupla contendo quatro elementos: X_train, X_valid, y_train, y_valid.\n
+                X_train (pd.DataFrame): O conjunto de recursos de treino.\n
+                X_valid (pd.DataFrame): O conjunto de recursos de teste.\n
+                y_train (pd.Series): O conjunto de alvos de treino.\n
+                y_valid (pd.Series): O conjunto de alvos de teste.\n
         """
         X = self.dataframe.drop(self.target_name, axis=1)
         y = self.dataframe[self.target_name]

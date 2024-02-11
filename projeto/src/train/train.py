@@ -32,6 +32,10 @@ class TrainModels:
     Attributes:
         dados_X (pd.DataFrame): O DataFrame contendo os recursos de entrada.
         dados_y (pd.DataFrame): O DataFrame contendo os rótulos alvo.
+
+    Methods:
+        get_best_model: Obtém os melhores parâmetros e a métrica de desempenho do melhor modelo do MLflow.
+        run: Executa o treinamento do modelo de Regressão Logística com os melhores parâmetros obtidos durante a busca do MLflow.
     """
 
     def __init__(self, dados_X: pd.DataFrame, dados_y: pd.DataFrame):
@@ -52,8 +56,7 @@ class TrainModels:
         Obtém os melhores parâmetros e a métrica de desempenho do melhor modelo do MLflow.
 
         Returns:
-            Tuple[float, pd.DataFrame]: Uma tupla contendo a melhor métrica de desempenho
-                e os melhores parâmetros do modelo.
+            Uma tupla contendo a melhor métrica de desempenho e os melhores parâmetros do modelo.
         """
 
         logger.info("Obtendo o melhor modelo do MLFlow")

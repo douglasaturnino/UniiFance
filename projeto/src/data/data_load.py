@@ -13,11 +13,8 @@ class DataLoad:
     """
     Classe para carregar dados de um arquivo CSV.
 
-    Attributes:
-        None
-
     Methods:
-        load_data(dataset_name: str) -> pd.DataFrame: Carrega os dados do arquivo CSV especificado.
+        load_data: Carrega os dados do arquivo CSV especificado.
     """
 
     def __init__(self) -> None:
@@ -29,8 +26,8 @@ class DataLoad:
         Args:
             dataset_name (str): O nome do arquivo CSV a ser carregado.
 
-        return:
-            pd.DataFrame: Um DataFrame contendo os dados carregados do arquivo CSV.
+        Returns:
+            dataframe: Um DataFrame contendo os dados carregados do arquivo CSV.
         """
         logger.info(f"Começando a carga dos dados com o nome {dataset_name}")
         try:
@@ -39,8 +36,10 @@ class DataLoad:
                 raise ValueError(
                     f"Erro: O nome do dataset fornecido é incorreto: {dataset}"
                 )
+            path = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+            dataset_path = os.path.join(path, "data", "raw", dataset)
 
-            loaded_data = pd.read_csv(f"../data/raw/{dataset}")
+            loaded_data = pd.read_csv(dataset_path)
             return loaded_data[load_config_file().get("columns_to_use")]
         except ValueError as ve:
             logger.error(str(ve))

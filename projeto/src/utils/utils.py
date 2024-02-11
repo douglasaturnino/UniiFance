@@ -1,9 +1,8 @@
 import os
-from typing import Dict
+from typing import Any, Dict
 
 import joblib
 import yaml
-from typing import Any
 
 
 def load_config_file() -> Dict:

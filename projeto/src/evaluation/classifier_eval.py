@@ -25,6 +25,12 @@ class ModelEvaluation:
         x (pd.DataFrame): O DataFrame contendo os recursos de entrada.
         y (pd.DataFrame): O DataFrame contendo os rótulos alvo.
         n_splits (int, optional): O número de divisões para a validação cruzada. Padrão é 5.
+
+    Methods:
+        cross_val_evaluate: Avalia as predições do modelo usando a métrica AUC-ROC.
+        evaluate_predictions: Avalia as predições do modelo usando a métrica AUC-ROC.
+        roc_auc_scorer: Calcula a métrica AUC-ROC para o modelo dado os dados de entrada e saída.
+
     """
 
     def __init__(
@@ -67,7 +73,9 @@ class ModelEvaluation:
         )
         return scores
 
-    def roc_auc_scorer(self, model, x: pd.DataFrame, y: pd.DataFrame) -> float:
+    def roc_auc_scorer(
+        self, model: Any, x: pd.DataFrame, y: pd.DataFrame
+    ) -> float:
         """
         Calcula a métrica AUC-ROC para o modelo dado os dados de entrada e saída.
 
@@ -84,13 +92,15 @@ class ModelEvaluation:
         return roc_auc_score(y, y_pred)
 
     @staticmethod
-    def evaluate_predictions(y_true, y_pred_proba) -> float:
+    def evaluate_predictions(
+        y_true: pd.DataFrame, y_pred_proba: pd.DataFrame
+    ) -> float:
         """
         Avalia as predições do modelo usando a métrica AUC-ROC.
 
         Args:
-            y_true: O array contendo os rótulos alvo verdadeiros.
-            y_pred_proba: O array contendo as probabilidades preditas para as classes positivas.
+            y_true (pd.DataFrame): O array contendo os rótulos alvo verdadeiros.
+            y_pred_proba (pd.DataFrame): O array contendo as probabilidades preditas para as classes positivas.
 
         Returns:
             float: O valor da métrica AUC-ROC.

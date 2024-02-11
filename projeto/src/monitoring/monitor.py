@@ -11,6 +11,7 @@ from evidently.metric_preset import DataDriftPreset
 from evidently.metrics import *
 from evidently.report import Report
 from evidently.test_preset import DataDriftTestPreset
+from utils.utils import load_config_file
 
 
 class ModelMonitoring:
@@ -66,7 +67,7 @@ class ModelMonitoring:
 
         df_cur = self.get_pred_data()  # dados atuais
         df_ref = self.get_training_data().drop(
-            "target", axis=1
+            load_config_file().get("target_name"), axis=1
         )  # dados referencia
 
         model_card = Report(

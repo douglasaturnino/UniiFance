@@ -15,3 +15,9 @@ inference_azure:
 
 monitoring:
 	cd src/monitoring; python3 monitor.py
+
+doc:
+	mkdocs serve
+
+doc-deploy:
+	mkdocs gh-deploy

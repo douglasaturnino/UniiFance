@@ -26,6 +26,9 @@ class Predict:
 
     Attributes:
         dataframe (pd.DataFrame): O DataFrame contendo os dados a serem preditos.
+
+    Methods:
+        run: Executa o processo de predição.
     """
 
     def __init__(self, dataframe: pd.DataFrame):

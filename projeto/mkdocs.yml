@@ -1,0 +1,33 @@
+site_name: Banco UniFinance
+repo_url: https://github.com/douglasaturnino/uniFinance
+repo_name: douglasaturnino/uniFinance
+
+theme:
+  name: material
+  features:
+    - navigation.top
+
+nav:
+  - Introdução: index.md
+  - dados.md
+  - train.md
+  - evaluation.md
+  - utils.md
+  - predict.md
+  - monitoring.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src/deploy]
+  
+  - search
+  - autorefs
+

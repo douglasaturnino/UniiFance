@@ -194,6 +194,7 @@ pyrightconfig.json
 
 # mlflow
 mlartifacts/
+mlruns
 
 # mkdocs
 site/

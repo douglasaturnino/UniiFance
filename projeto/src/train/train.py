@@ -139,3 +139,9 @@ class TrainModels:
             input_example=self.dados_X.iloc[[0]],
             registered_model_name=self.model_name,
         )
+        client = mlflow.MlflowClient()
+        model = client.get_registered_model(self.model_name)
+
+        client.set_registered_model_alias(
+            self.model_name, "modelo", model.latest_versions[-1].version
+        )

@@ -1,5 +1,9 @@
+MLFLOW_TRACKING_URI=http://localhost:5000
+MODEL_NAME=modelo.joblib
+ALIASES=modelo
+
 train:
-	python src/train/train.py
+	python src/train/hyperparameter.py
 
 format:
 	ruff check --select I --fix . && ruff format .
@@ -15,6 +19,11 @@ inference_azure:
 
 monitoring:
 	cd src/monitoring; python3 monitor.py
+
+generate-dockerfile:
+	export MLFLOW_TRACKING_URI=$(MLFLOW_TRACKING_URI) \
+	&& cd .. \
+	&& mlflow models generate-dockerfile --model-uri "models:/$(MODEL_NAME)@$(ALIASES)"
 
 doc:
 	mkdocs serve

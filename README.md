@@ -1,7 +1,9 @@
+![unifinance](https://gist.github.com/assets/95532957/fbd4cdc3-ae96-4541-9045-f0ec82f807dd)
+
 Este é um projeto fictício. A empresa, o contexto e as perguntas de negócios não são reais. 
 Este portfólio está seguindo as recomendações do blog da Comunidade DS.
 
-O Banco UniFinance, uma instituição financeira líder e confiável, destaca-se no
+O Banco UniiFance, uma instituição financeira líder e confiável, destaca-se no
 mercado pela sua dedicação em fornecer soluções de crédito acessíveis e sob
 medida para empresários do setor comercial. Com foco em empréstimos
 flexíveis e acessíveis, nossa equipe altamente qualificada trabalha em estreita
@@ -16,7 +18,7 @@ nos próximos dois anos.
 
 ## Entendimento do negócio
 
-No Banco UniFinance, quando um cliente solicita um empréstimo, iniciamos um
+No Banco UniiFance, quando um cliente solicita um empréstimo, iniciamos um
 processo de avaliação que inclui a análise de diversos fatores, um dos quais é a
 possível ocorrência de dificuldades financeiras nos próximos dois anos. Isso é
 crucial para identificar e mitigar riscos que poderiam levar à inadimplência, o
@@ -67,5 +69,16 @@ Foi desenvolvida uma API onde os clientes podem enviar os dados necessários par
 ## Conclusão
 
 * O objetivo do projeto foi alcançado, dado que os produtos de dados propostos foram gerados com sucesso.
+* Foi construida uma documentação com o problema a ser resolvido e detalhes da classes [aqui](https://douglasaturnino.github.io/UniiFance/).
 
-<p>Confira o <a href="docs/model_monitoring_report.html" target="_blank" rel="noopener noreferrer">Resultado do monitoramento</a>.</p>
+<p>Confira o <a href="https://douglasaturnino.github.io/UniiFance/model_monitoring_report.html" target="_blank" rel="noopener noreferrer">Resultado do monitoramento</a>.</p>
+
+## Próximos passos
+* Fazer uma tela para pessoas não tecnicas poderem utilizar.
+* Colocar a possibilidade para treinar diferentes modelos.
+* Colocar todas as configurações no arquivo config.yaml, pois existe partes do codigo que poderiam está no arquivo e não foram acrecentdas de vido a mudança no codigo.
+* Existes classes que podem ser divididas em novas classes, pois no começo do projeto não fazia sentido ter duas classes
+
+## Referências
+* Este Projeto foi feito como parte do curso "MLflow", da [Comunidade DS](https://www.comunidadeds.com/).
+

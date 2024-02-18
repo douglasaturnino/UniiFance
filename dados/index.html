@@ -150,6 +150,18 @@
 </div>
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/douglasaturnino/uniFinance" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    douglasaturnino/uniFinance
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -183,6 +195,18 @@
     </a>
     Banco UniFinance
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/douglasaturnino/uniFinance" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    douglasaturnino/uniFinance
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -385,6 +409,24 @@
   <a href="#src.data.data_validation.DataValidation.check_shape_data" class="md-nav__link">
     <span class="md-ellipsis">
       check_shape_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#src.data.data_validation.DataValidation.create_column" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_column
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#src.data.data_validation.DataValidation.create_dataframe_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_dataframe_schema
     </span>
   </a>
   
@@ -673,6 +715,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#src.data.data_validation.DataValidation.create_column" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_column
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#src.data.data_validation.DataValidation.create_dataframe_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_dataframe_schema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#src.data.data_validation.DataValidation.run" class="md-nav__link">
     <span class="md-ellipsis">
       run
@@ -699,6 +759,9 @@
               <article class="md-content__inner md-typeset">
                 
                   
+
+  
+  
 
 
 <h1>Data</h1>
@@ -1917,8 +1980,7 @@ subconjuntos de treino e teste.</p>
 
             <details class="quote">
               <summary>Source code in <code>src/data/data_validation.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 14</span>
-<span class="normal"> 15</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 15</span>
 <span class="normal"> 16</span>
 <span class="normal"> 17</span>
 <span class="normal"> 18</span>
@@ -2020,7 +2082,87 @@ subconjuntos de treino e teste.</p>
 <span class="normal">114</span>
 <span class="normal">115</span>
 <span class="normal">116</span>
-<span class="normal">117</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">DataValidation</span><span class="p">:</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">DataValidation</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Classe de validação dos dados.</span>
 
@@ -2051,6 +2193,7 @@ subconjuntos de treino e teste.</p>
 <span class="sd">        Returns:</span>
 <span class="sd">            bool: True se a validação for bem-sucedida, False caso contrário.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+
         <span class="k">try</span><span class="p">:</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Validacao iniciou&quot;</span><span class="p">)</span>
             <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns_to_use</span>
@@ -2069,36 +2212,10 @@ subconjuntos de treino e teste.</p>
 <span class="sd">        Returns:</span>
 <span class="sd">            bool: True se a validação for bem-sucedida, False caso contrário.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">schema</span> <span class="o">=</span> <span class="n">DataFrameSchema</span><span class="p">(</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                    <span class="nb">int</span><span class="p">,</span>
-                    <span class="n">Check</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span>
-                    <span class="n">Check</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">),</span>
-                    <span class="n">coerce</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-                <span class="p">),</span>
-                <span class="s2">&quot;TaxaDeUtilizacaoDeLinhasNaoGarantidas&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                    <span class="nb">float</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-                <span class="p">),</span>
-                <span class="s2">&quot;Idade&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-                <span class="s2">&quot;NumeroDeVezes30-59DiasAtrasoNaoPior&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                    <span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-                <span class="p">),</span>
-                <span class="s2">&quot;TaxaDeEndividamento&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-                <span class="s2">&quot;RendaMensal&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-                <span class="s2">&quot;NumeroDeLinhasDeCreditoEEmprestimosAbertos&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                    <span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-                <span class="p">),</span>
-                <span class="s2">&quot;NumeroDeVezes90DiasAtraso&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-                <span class="s2">&quot;NumeroDeEmprestimosOuLinhasImobiliarias&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                    <span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-                <span class="p">),</span>
-                <span class="s2">&quot;NumeroDeVezes60-89DiasAtrasoNaoPior&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                    <span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-                <span class="p">),</span>
-                <span class="s2">&quot;NumeroDeDependentes&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-            <span class="p">}</span>
-        <span class="p">)</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">load_config_file</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
+
+        <span class="n">schema</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_dataframe_schema</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+
         <span class="k">try</span><span class="p">:</span>
             <span class="n">schema</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Validation columns passed...&quot;</span><span class="p">)</span>
@@ -2107,6 +2224,110 @@ subconjuntos de treino e teste.</p>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Validation columns failed...&quot;</span><span class="p">)</span>
             <span class="n">pandera</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">exc</span><span class="o">.</span><span class="n">failure_cases</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">create_dataframe_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrameSchema</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Cria um esquema de DataFrame com base na configuração fornecida.</span>
+
+<span class="sd">        Este método cria um DataFrameSchema com base na configuração passada. A configuração</span>
+<span class="sd">        deve ser um dicionário contendo informações sobre as colunas do DataFrame.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">        - config (Dict): Um dicionário contendo informações sobre as colunas do DataFrame.</span>
+<span class="sd">                         Espera-se que o dicionário tenha uma chave &quot;columns&quot; que contém uma lista</span>
+<span class="sd">                         de dicionários, onde cada dicionário representa uma coluna do DataFrame.</span>
+<span class="sd">                         Cada dicionário de coluna deve conter pelo menos as chaves &quot;name&quot; e &quot;type&quot;,</span>
+<span class="sd">                         que representam o nome e o tipo da coluna, respectivamente.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        - DataFrameSchema: Um esquema de DataFrame baseado na configuração fornecida.</span>
+<span class="sd">                           O esquema define as expectativas de validação para cada coluna do DataFrame.</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        Para criar um esquema de DataFrame, suponha que a configuração seja a seguinte:</span>
+
+<span class="sd">        config = {</span>
+<span class="sd">            &quot;columns&quot;: [</span>
+<span class="sd">                {&quot;name&quot;: &quot;column1&quot;, &quot;type&quot;: str, &quot;nullable&quot;: True},</span>
+<span class="sd">                {&quot;name&quot;: &quot;column2&quot;, &quot;type&quot;: int, &quot;nullable&quot;: False},</span>
+<span class="sd">                {&quot;name&quot;: &quot;column3&quot;, &quot;type&quot;: float, &quot;nullable&quot;: True},</span>
+<span class="sd">            ]</span>
+<span class="sd">        }</span>
+
+<span class="sd">        Este método irá iterar sobre as colunas especificadas na configuração e criar um esquema</span>
+<span class="sd">        DataFrameSchema com base nessas informações. Por exemplo, ele criará validações para garantir</span>
+<span class="sd">        que os tipos das colunas correspondam aos tipos especificados e que as colunas que são</span>
+<span class="sd">        marcadas como não nulas não contenham valores nulos.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">columns</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">column_data</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]:</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_column</span><span class="p">(</span><span class="n">column_data</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">column_data</span> <span class="ow">in</span> <span class="n">config</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">DataFrameSchema</span><span class="p">(</span><span class="n">columns</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">create_column</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_data</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Cria uma instância de coluna com base nos dados fornecidos.</span>
+
+<span class="sd">        Este método cria uma instância de coluna com base nos dados passados como argumento.</span>
+<span class="sd">        Os dados devem conter informações sobre o tipo, coercibilidade, nulabilidade e verificações</span>
+<span class="sd">        que devem ser aplicadas à coluna.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">        - column_data (Dict): Um dicionário contendo informações sobre a coluna a ser criada.</span>
+<span class="sd">                              Espera-se que o dicionário contenha as seguintes chaves:</span>
+<span class="sd">                              - &quot;type&quot;: Tipo de dados da coluna. Por exemplo, str, int, float, etc.</span>
+<span class="sd">                              - &quot;coerce&quot; (opcional): Um valor booleano indicando se a coerção deve ser aplicada.</span>
+<span class="sd">                                                     Por padrão, é False se não estiver presente.</span>
+<span class="sd">                              - &quot;nullable&quot; (opcional): Um valor booleano indicando se a coluna pode conter valores nulos.</span>
+<span class="sd">                                                        Por padrão, é True se não estiver presente.</span>
+<span class="sd">                              - &quot;checks&quot; (opcional): Uma lista de verificações que devem ser aplicadas à coluna.</span>
+<span class="sd">                                                      Cada verificação é representada por um dicionário com uma das</span>
+<span class="sd">                                                      seguintes chaves: &quot;isin&quot; ou &quot;custom_check&quot;.</span>
+<span class="sd">                                                      - &quot;isin&quot;: Verifica se os valores da coluna estão presentes em</span>
+<span class="sd">                                                                um conjunto específico de valores.</span>
+<span class="sd">                                                                Espera-se que o valor associado seja uma lista</span>
+<span class="sd">                                                                de valores permitidos.</span>
+<span class="sd">                                                      - &quot;custom_check&quot;: Permite definir uma verificação personalizada</span>
+<span class="sd">                                                                        fornecendo uma expressão Python que será avaliada</span>
+<span class="sd">                                                                        para cada valor na coluna.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        - Column: Uma instância de coluna criada com base nos dados fornecidos.</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        Para criar uma coluna, suponha que os dados fornecidos sejam os seguintes:</span>
+
+<span class="sd">        column_data = {</span>
+<span class="sd">            &quot;type&quot;: str,</span>
+<span class="sd">            &quot;coerce&quot;: True,</span>
+<span class="sd">            &quot;nullable&quot;: False,</span>
+<span class="sd">            &quot;checks&quot;: [</span>
+<span class="sd">                {&quot;isin&quot;: [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;]},</span>
+<span class="sd">                {&quot;custom_check&quot;: &quot;lambda x: x.startswith(&#39;X&#39;)&quot;}</span>
+<span class="sd">            ]</span>
+<span class="sd">        }</span>
+
+<span class="sd">        Este método criará uma instância de coluna com o tipo de dados str, permitindo coerção,</span>
+<span class="sd">        sem permitir valores nulos e aplicando duas verificações: uma para verificar se os valores</span>
+<span class="sd">        estão em [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;] e outra para verificar se os valores começam com &#39;X&#39;.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">checks</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">check_data</span> <span class="ow">in</span> <span class="n">column_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;checks&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+            <span class="k">if</span> <span class="s2">&quot;isin&quot;</span> <span class="ow">in</span> <span class="n">check_data</span><span class="p">:</span>
+                <span class="n">checks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Check</span><span class="o">.</span><span class="n">isin</span><span class="p">((</span><span class="n">check_data</span><span class="p">[</span><span class="s2">&quot;isin&quot;</span><span class="p">])))</span>
+            <span class="k">elif</span> <span class="s2">&quot;custom_check&quot;</span> <span class="ow">in</span> <span class="n">check_data</span><span class="p">:</span>
+                <span class="n">checks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Check</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">check_data</span><span class="p">[</span><span class="s2">&quot;custom_check&quot;</span><span class="p">])))</span>
+
+        <span class="k">return</span> <span class="n">Column</span><span class="p">(</span>
+            <span class="n">column_data</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">],</span>
+            <span class="n">coerce</span><span class="o">=</span><span class="n">column_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;coerce&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+            <span class="n">nullable</span><span class="o">=</span><span class="n">column_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;nullable&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+            <span class="n">checks</span><span class="o">=</span><span class="n">checks</span><span class="p">,</span>
+        <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -2156,11 +2377,11 @@ subconjuntos de treino e teste.</p>
 
           <details class="quote">
             <summary>Source code in <code>src/data/data_validation.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">29</span>
-<span class="normal">30</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">30</span>
 <span class="normal">31</span>
 <span class="normal">32</span>
-<span class="normal">33</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Inicializa uma instância da classe DataValidation.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -2242,54 +2463,28 @@ subconjuntos de treino e teste.</p>
 
           <details class="quote">
             <summary>Source code in <code>src/data/data_validation.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 53</span>
-<span class="normal"> 54</span>
-<span class="normal"> 55</span>
-<span class="normal"> 56</span>
-<span class="normal"> 57</span>
-<span class="normal"> 58</span>
-<span class="normal"> 59</span>
-<span class="normal"> 60</span>
-<span class="normal"> 61</span>
-<span class="normal"> 62</span>
-<span class="normal"> 63</span>
-<span class="normal"> 64</span>
-<span class="normal"> 65</span>
-<span class="normal"> 66</span>
-<span class="normal"> 67</span>
-<span class="normal"> 68</span>
-<span class="normal"> 69</span>
-<span class="normal"> 70</span>
-<span class="normal"> 71</span>
-<span class="normal"> 72</span>
-<span class="normal"> 73</span>
-<span class="normal"> 74</span>
-<span class="normal"> 75</span>
-<span class="normal"> 76</span>
-<span class="normal"> 77</span>
-<span class="normal"> 78</span>
-<span class="normal"> 79</span>
-<span class="normal"> 80</span>
-<span class="normal"> 81</span>
-<span class="normal"> 82</span>
-<span class="normal"> 83</span>
-<span class="normal"> 84</span>
-<span class="normal"> 85</span>
-<span class="normal"> 86</span>
-<span class="normal"> 87</span>
-<span class="normal"> 88</span>
-<span class="normal"> 89</span>
-<span class="normal"> 90</span>
-<span class="normal"> 91</span>
-<span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
-<span class="normal"> 95</span>
-<span class="normal"> 96</span>
-<span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">check_columns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">check_columns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Verifica se as colunas do DataFrame atendem aos critérios definidos.</span>
 
@@ -2299,36 +2494,10 @@ subconjuntos de treino e teste.</p>
 <span class="sd">    Returns:</span>
 <span class="sd">        bool: True se a validação for bem-sucedida, False caso contrário.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">schema</span> <span class="o">=</span> <span class="n">DataFrameSchema</span><span class="p">(</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                <span class="nb">int</span><span class="p">,</span>
-                <span class="n">Check</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span>
-                <span class="n">Check</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">),</span>
-                <span class="n">coerce</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;TaxaDeUtilizacaoDeLinhasNaoGarantidas&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                <span class="nb">float</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;Idade&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-            <span class="s2">&quot;NumeroDeVezes30-59DiasAtrasoNaoPior&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                <span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;TaxaDeEndividamento&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-            <span class="s2">&quot;RendaMensal&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-            <span class="s2">&quot;NumeroDeLinhasDeCreditoEEmprestimosAbertos&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                <span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;NumeroDeVezes90DiasAtraso&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-            <span class="s2">&quot;NumeroDeEmprestimosOuLinhasImobiliarias&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                <span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;NumeroDeVezes60-89DiasAtrasoNaoPior&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span>
-                <span class="nb">int</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;NumeroDeDependentes&quot;</span><span class="p">:</span> <span class="n">Column</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-        <span class="p">}</span>
-    <span class="p">)</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="n">load_config_file</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
+
+    <span class="n">schema</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_dataframe_schema</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+
     <span class="k">try</span><span class="p">:</span>
         <span class="n">schema</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Validation columns passed...&quot;</span><span class="p">)</span>
@@ -2414,8 +2583,7 @@ subconjuntos de treino e teste.</p>
 
           <details class="quote">
             <summary>Source code in <code>src/data/data_validation.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">35</span>
-<span class="normal">36</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">36</span>
 <span class="normal">37</span>
 <span class="normal">38</span>
 <span class="normal">39</span>
@@ -2430,7 +2598,9 @@ subconjuntos de treino e teste.</p>
 <span class="normal">48</span>
 <span class="normal">49</span>
 <span class="normal">50</span>
-<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">check_shape_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">check_shape_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Verifica se as colunas do DataFrame correspondem à configuração definida.</span>
 
@@ -2440,6 +2610,7 @@ subconjuntos de treino e teste.</p>
 <span class="sd">    Returns:</span>
 <span class="sd">        bool: True se a validação for bem-sucedida, False caso contrário.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="k">try</span><span class="p">:</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Validacao iniciou&quot;</span><span class="p">)</span>
         <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns_to_use</span>
@@ -2447,6 +2618,318 @@ subconjuntos de treino e teste.</p>
     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Validacao errou: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">False</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="src.data.data_validation.DataValidation.create_column" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">create_column</span><span class="p">(</span><span class="n">column_data</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Cria uma instância de coluna com base nos dados fornecidos.</p>
+<p>Este método cria uma instância de coluna com base nos dados passados como argumento.
+Os dados devem conter informações sobre o tipo, coercibilidade, nulabilidade e verificações
+que devem ser aplicadas à coluna.</p>
+      <ul>
+<li>column_data (Dict): Um dicionário contendo informações sobre a coluna a ser criada.
+                      Espera-se que o dicionário contenha as seguintes chaves:
+                      - "type": Tipo de dados da coluna. Por exemplo, str, int, float, etc.
+                      - "coerce" (opcional): Um valor booleano indicando se a coerção deve ser aplicada.
+                                             Por padrão, é False se não estiver presente.
+                      - "nullable" (opcional): Um valor booleano indicando se a coluna pode conter valores nulos.
+                                                Por padrão, é True se não estiver presente.
+                      - "checks" (opcional): Uma lista de verificações que devem ser aplicadas à coluna.
+                                              Cada verificação é representada por um dicionário com uma das
+                                              seguintes chaves: "isin" ou "custom_check".
+                                              - "isin": Verifica se os valores da coluna estão presentes em
+                                                        um conjunto específico de valores.
+                                                        Espera-se que o valor associado seja uma lista
+                                                        de valores permitidos.
+                                              - "custom_check": Permite definir uma verificação personalizada
+                                                                fornecendo uma expressão Python que será avaliada
+                                                                para cada valor na coluna.</li>
+</ul>
+<p>Returns:
+- Column: Uma instância de coluna criada com base nos dados fornecidos.</p>
+<p>Example:
+Para criar uma coluna, suponha que os dados fornecidos sejam os seguintes:</p>
+<p>column_data = {
+    "type": str,
+    "coerce": True,
+    "nullable": False,
+    "checks": [
+        {"isin": ["A", "B", "C"]},
+        {"custom_check": "lambda x: x.startswith('X')"}
+    ]
+}</p>
+<p>Este método criará uma instância de coluna com o tipo de dados str, permitindo coerção,
+sem permitir valores nulos e aplicando duas verificações: uma para verificar se os valores
+estão em ["A", "B", "C"] e outra para verificar se os valores começam com 'X'.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>src/data/data_validation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">create_column</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_data</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cria uma instância de coluna com base nos dados fornecidos.</span>
+
+<span class="sd">    Este método cria uma instância de coluna com base nos dados passados como argumento.</span>
+<span class="sd">    Os dados devem conter informações sobre o tipo, coercibilidade, nulabilidade e verificações</span>
+<span class="sd">    que devem ser aplicadas à coluna.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    - column_data (Dict): Um dicionário contendo informações sobre a coluna a ser criada.</span>
+<span class="sd">                          Espera-se que o dicionário contenha as seguintes chaves:</span>
+<span class="sd">                          - &quot;type&quot;: Tipo de dados da coluna. Por exemplo, str, int, float, etc.</span>
+<span class="sd">                          - &quot;coerce&quot; (opcional): Um valor booleano indicando se a coerção deve ser aplicada.</span>
+<span class="sd">                                                 Por padrão, é False se não estiver presente.</span>
+<span class="sd">                          - &quot;nullable&quot; (opcional): Um valor booleano indicando se a coluna pode conter valores nulos.</span>
+<span class="sd">                                                    Por padrão, é True se não estiver presente.</span>
+<span class="sd">                          - &quot;checks&quot; (opcional): Uma lista de verificações que devem ser aplicadas à coluna.</span>
+<span class="sd">                                                  Cada verificação é representada por um dicionário com uma das</span>
+<span class="sd">                                                  seguintes chaves: &quot;isin&quot; ou &quot;custom_check&quot;.</span>
+<span class="sd">                                                  - &quot;isin&quot;: Verifica se os valores da coluna estão presentes em</span>
+<span class="sd">                                                            um conjunto específico de valores.</span>
+<span class="sd">                                                            Espera-se que o valor associado seja uma lista</span>
+<span class="sd">                                                            de valores permitidos.</span>
+<span class="sd">                                                  - &quot;custom_check&quot;: Permite definir uma verificação personalizada</span>
+<span class="sd">                                                                    fornecendo uma expressão Python que será avaliada</span>
+<span class="sd">                                                                    para cada valor na coluna.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    - Column: Uma instância de coluna criada com base nos dados fornecidos.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">    Para criar uma coluna, suponha que os dados fornecidos sejam os seguintes:</span>
+
+<span class="sd">    column_data = {</span>
+<span class="sd">        &quot;type&quot;: str,</span>
+<span class="sd">        &quot;coerce&quot;: True,</span>
+<span class="sd">        &quot;nullable&quot;: False,</span>
+<span class="sd">        &quot;checks&quot;: [</span>
+<span class="sd">            {&quot;isin&quot;: [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;]},</span>
+<span class="sd">            {&quot;custom_check&quot;: &quot;lambda x: x.startswith(&#39;X&#39;)&quot;}</span>
+<span class="sd">        ]</span>
+<span class="sd">    }</span>
+
+<span class="sd">    Este método criará uma instância de coluna com o tipo de dados str, permitindo coerção,</span>
+<span class="sd">    sem permitir valores nulos e aplicando duas verificações: uma para verificar se os valores</span>
+<span class="sd">    estão em [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;] e outra para verificar se os valores começam com &#39;X&#39;.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">checks</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">check_data</span> <span class="ow">in</span> <span class="n">column_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;checks&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+        <span class="k">if</span> <span class="s2">&quot;isin&quot;</span> <span class="ow">in</span> <span class="n">check_data</span><span class="p">:</span>
+            <span class="n">checks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Check</span><span class="o">.</span><span class="n">isin</span><span class="p">((</span><span class="n">check_data</span><span class="p">[</span><span class="s2">&quot;isin&quot;</span><span class="p">])))</span>
+        <span class="k">elif</span> <span class="s2">&quot;custom_check&quot;</span> <span class="ow">in</span> <span class="n">check_data</span><span class="p">:</span>
+            <span class="n">checks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Check</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">check_data</span><span class="p">[</span><span class="s2">&quot;custom_check&quot;</span><span class="p">])))</span>
+
+    <span class="k">return</span> <span class="n">Column</span><span class="p">(</span>
+        <span class="n">column_data</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">],</span>
+        <span class="n">coerce</span><span class="o">=</span><span class="n">column_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;coerce&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="n">nullable</span><span class="o">=</span><span class="n">column_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;nullable&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">checks</span><span class="o">=</span><span class="n">checks</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="src.data.data_validation.DataValidation.create_dataframe_schema" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">create_dataframe_schema</span><span class="p">(</span><span class="n">config</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Cria um esquema de DataFrame com base na configuração fornecida.</p>
+<p>Este método cria um DataFrameSchema com base na configuração passada. A configuração
+deve ser um dicionário contendo informações sobre as colunas do DataFrame.</p>
+      <ul>
+<li>config (Dict): Um dicionário contendo informações sobre as colunas do DataFrame.
+                 Espera-se que o dicionário tenha uma chave "columns" que contém uma lista
+                 de dicionários, onde cada dicionário representa uma coluna do DataFrame.
+                 Cada dicionário de coluna deve conter pelo menos as chaves "name" e "type",
+                 que representam o nome e o tipo da coluna, respectivamente.</li>
+</ul>
+      <ul>
+<li>DataFrameSchema: Um esquema de DataFrame baseado na configuração fornecida.
+                   O esquema define as expectativas de validação para cada coluna do DataFrame.</li>
+</ul>
+<p>Example:
+Para criar um esquema de DataFrame, suponha que a configuração seja a seguinte:</p>
+<p>config = {
+    "columns": [
+        {"name": "column1", "type": str, "nullable": True},
+        {"name": "column2", "type": int, "nullable": False},
+        {"name": "column3", "type": float, "nullable": True},
+    ]
+}</p>
+<p>Este método irá iterar sobre as colunas especificadas na configuração e criar um esquema
+DataFrameSchema com base nessas informações. Por exemplo, ele criará validações para garantir
+que os tipos das colunas correspondam aos tipos especificados e que as colunas que são
+marcadas como não nulas não contenham valores nulos.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>src/data/data_validation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">create_dataframe_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrameSchema</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cria um esquema de DataFrame com base na configuração fornecida.</span>
+
+<span class="sd">    Este método cria um DataFrameSchema com base na configuração passada. A configuração</span>
+<span class="sd">    deve ser um dicionário contendo informações sobre as colunas do DataFrame.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    - config (Dict): Um dicionário contendo informações sobre as colunas do DataFrame.</span>
+<span class="sd">                     Espera-se que o dicionário tenha uma chave &quot;columns&quot; que contém uma lista</span>
+<span class="sd">                     de dicionários, onde cada dicionário representa uma coluna do DataFrame.</span>
+<span class="sd">                     Cada dicionário de coluna deve conter pelo menos as chaves &quot;name&quot; e &quot;type&quot;,</span>
+<span class="sd">                     que representam o nome e o tipo da coluna, respectivamente.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    - DataFrameSchema: Um esquema de DataFrame baseado na configuração fornecida.</span>
+<span class="sd">                       O esquema define as expectativas de validação para cada coluna do DataFrame.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">    Para criar um esquema de DataFrame, suponha que a configuração seja a seguinte:</span>
+
+<span class="sd">    config = {</span>
+<span class="sd">        &quot;columns&quot;: [</span>
+<span class="sd">            {&quot;name&quot;: &quot;column1&quot;, &quot;type&quot;: str, &quot;nullable&quot;: True},</span>
+<span class="sd">            {&quot;name&quot;: &quot;column2&quot;, &quot;type&quot;: int, &quot;nullable&quot;: False},</span>
+<span class="sd">            {&quot;name&quot;: &quot;column3&quot;, &quot;type&quot;: float, &quot;nullable&quot;: True},</span>
+<span class="sd">        ]</span>
+<span class="sd">    }</span>
+
+<span class="sd">    Este método irá iterar sobre as colunas especificadas na configuração e criar um esquema</span>
+<span class="sd">    DataFrameSchema com base nessas informações. Por exemplo, ele criará validações para garantir</span>
+<span class="sd">    que os tipos das colunas correspondam aos tipos especificados e que as colunas que são</span>
+<span class="sd">    marcadas como não nulas não contenham valores nulos.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">columns</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">column_data</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]:</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_column</span><span class="p">(</span><span class="n">column_data</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">column_data</span> <span class="ow">in</span> <span class="n">config</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">DataFrameSchema</span><span class="p">(</span><span class="n">columns</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -2524,22 +3007,22 @@ subconjuntos de treino e teste.</p>
 
           <details class="quote">
             <summary>Source code in <code>src/data/data_validation.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Executa as validações da estrutura e das colunas do DataFrame.</span>
 
@@ -2589,6 +3072,12 @@ subconjuntos de treino e teste.</p>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -2615,7 +3104,7 @@ subconjuntos de treino e teste.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>

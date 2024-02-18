@@ -6,6 +6,7 @@ columns_to_use: ['target', 'TaxaDeUtilizacaoDeLinhasNaoGarantidas',
 
 train_dataset_name: 'train.csv'
 test_dataset_name: 'test.csv'
+path_preprocess: 'models/preprocess.joblib'
 
 target_name: "target"
 test_size: 0.33
@@ -15,3 +16,53 @@ vars_imputer: ['RendaMensal','NumeroDeDependentes']
 vars_discretize: ['TaxaDeUtilizacaoDeLinhasNaoGarantidas', 'TaxaDeEndividamento', 'RendaMensal']
 
 model_name: 'modelo.joblib'
+
+columns:
+  - name: target
+    type: int
+    checks:
+      - isin: [0, 1]
+      - custom_check: 'lambda x: x >= 0'
+    nullable: false
+    coerce: true
+  - name: TaxaDeUtilizacaoDeLinhasNaoGarantidas
+    type: float
+    nullable: true
+    coerce: true
+  - name: Idade
+    type: int
+    nullable: true
+    coerce: true
+  - name: NumeroDeVezes30-59DiasAtrasoNaoPior
+    type: int
+    nullable: true
+    coerce: true
+  - name: TaxaDeEndividamento
+    type: int
+    nullable: true
+    coerce: true
+  - name: RendaMensal
+    type: float
+    nullable: true
+    coerce: true
+  - name: NumeroDeLinhasDeCreditoEEmprestimosAbertos
+    type: int
+    nullable: true
+    coerce: true
+  - name: NumeroDeVezes90DiasAtraso
+    type: int
+    nullable: true
+    coerce: true
+  - name: NumeroDeEmprestimosOuLinhasImobiliarias
+    type: int
+    nullable: true
+    coerce: true
+  - name: NumeroDeVezes60-89DiasAtrasoNaoPior
+    type: int
+    nullable: true
+    coerce: true
+  - name: NumeroDeDependentes
+    type: float
+    nullable: true
+    coerce: true
+

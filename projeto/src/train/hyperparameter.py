@@ -109,9 +109,10 @@ def objective(params: Dict[str, Any]) -> Dict[str, Union[float, int]]:
         X_train_processed = preprocessdor.transform(X_train)
         X_valid_processed = preprocessdor.transform(X_valid)
 
-        joblib.dump(preprocessdor, "projeto/models/preprocess.joblib")
+        path_preprocess = load_config_file().get("path_preprocess")
+        joblib.dump(preprocessdor, path_preprocess)
 
-        mlflow.log_artifact("projeto/models/preprocess.joblib")
+        mlflow.log_artifact(path_preprocess)
 
         mlflow.log_params(
             params={

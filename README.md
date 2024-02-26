@@ -1,4 +1,6 @@
-![unifinance](https://gist.github.com/assets/95532957/fbd4cdc3-ae96-4541-9045-f0ec82f807dd)
+<div align='center'>
+<img src="https://github.com/douglasaturnino/UniiFance/assets/95532957/3489106b-91ad-4973-b6d6-f2e051e90824"  width=700px/>
+</div>
 
 Este é um projeto fictício. A empresa, o contexto e as perguntas de negócios não são reais. 
 Este portfólio está seguindo as recomendações do blog da Comunidade DS.
